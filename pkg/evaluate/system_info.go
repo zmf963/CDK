@@ -99,7 +99,7 @@ func ASLR() {
 
 	data, err := ioutil.ReadFile(ASLRSetting)
 	if err != nil {
-		log.Printf("err found while open %s: %v\n", RouteLocalNetProcPath, err)
+		log.Printf("err found while open %s: %v\n", ASLRSetting, err)
 		return
 	}
 	log.Printf("/proc/sys/kernel/randomize_va_space file content: %s", string(data))
